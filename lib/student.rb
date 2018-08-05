@@ -34,7 +34,7 @@ def save
       self.update
     else
       sql = <<-SQL
-        INSERT INTO students (name, grade) 
+        INSERT INTO students (name, grade)
         VALUES (?, ?)
       SQL
 
@@ -42,7 +42,7 @@ def save
 
       @id = DB[:conn].execute("SELECT last_insert_rowid() FROM students")[0][0]
     end
-    
+
   end
 
 end
