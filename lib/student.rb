@@ -21,7 +21,7 @@ def create_table
     grade TEXT
   )
  SQL
- DB[:conn].execute(sql) 
+ DB[:conn].execute(sql)
 end
 
 end
