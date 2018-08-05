@@ -60,7 +60,8 @@ end
 
 def find_by_name(name)
   sql = <<-SQL
-  SELECT * from students
+  SELECT * 
+  FROM students
   WHERE name = ?
   LIMIT 1
   SQL
